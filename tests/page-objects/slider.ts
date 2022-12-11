@@ -8,7 +8,7 @@ export class SliderPO {
 
   constructor(page: Page) {
     this.page = page;
-    this.title = page.locator("'SIP Calculator'");
+    this.title = page.locator("'SIP Calculator'").nth(0);
     this.slider = page.locator("(//div[@role='slider'])[1]");
     this.sliderValue = page.locator("#MONTHLY_INVESTMENT");
   }
