@@ -1,0 +1,24 @@
+{
+  "name": "playwright-web-boilerplate",
+  "version": "1.0.0",
+  "description": "Playwright boilerplate with test examples.",
+  "main": "index.js",
+  "scripts": {
+    "chrome": "npx playwright test --project=chromium",
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irimiecernea/playwright-web-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irimiecernea/playwright-web-boilerplate/issues"
+  },
+  "homepage": "https://github.com/irimiecernea/playwright-web-boilerplate#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
+  }
+}
