@@ -1,13 +1,18 @@
-import { test as base } from "@playwright/test";
-import { SliderPO } from "../tests/page-objects/slider";
+import { test as base } from '@playwright/test';
+import { RadioButtons } from '../tests/page-objects/radio.buttons.page';
+import { Slider } from '../tests/page-objects/slider.page';
 
 type pages = {
-  sliderPO: SliderPO;
+  slider: Slider;
+  radioButtons: RadioButtons;
 };
 
 const testPages = base.extend<pages>({
-  sliderPO: async ({ page }, use) => {
-    await use(new SliderPO(page));
+  slider: async ({ page }, use) => {
+    await use(new Slider(page));
+  },
+  radioButtons: async ({ page }, use) => {
+    await use(new RadioButtons(page));
   },
 });
 

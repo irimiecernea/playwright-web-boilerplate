@@ -1,6 +1,6 @@
 import { Locator, Page } from '@playwright/test';
 
-export class SliderPO {
+export class Slider {
   readonly page: Page;
   readonly title: Locator;
   readonly sliderHandle: Locator;
