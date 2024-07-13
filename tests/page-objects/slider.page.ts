@@ -11,7 +11,7 @@ export class Slider {
   constructor(page: Page) {
     this.page = page;
     this.title = page.locator("'SIP Calculator'").nth(0);
-    this.sliderHandle = page.locator("(//div[@role='slider'])[1]");
+    this.sliderHandle = page.locator("//div[@role='slider']").first();
     this.sliderValue = page.locator('#MONTHLY_INVESTMENT');
     this.minSliderValue = 500;
     this.maxSliderValue = 100_000;

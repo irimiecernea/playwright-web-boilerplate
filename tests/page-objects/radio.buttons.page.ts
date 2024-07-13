@@ -6,18 +6,14 @@ export class RadioButtons {
   readonly title: Locator;
   readonly maleRadioButton: Locator;
   readonly femaleRadioButton: Locator;
-  readonly getCheckedValueButton: Locator;
-  readonly selectedRadioButton: Locator;
+  readonly getValueButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.title = page.locator('div[class=container] h1');
     this.maleRadioButton = page.locator('input[value=Male][name=optradio]');
     this.femaleRadioButton = page.locator('input[value=Female][name=optradio]');
-    this.getCheckedValueButton = page.locator('#buttoncheck');
-    this.selectedRadioButton = page.locator(
-      "(//p[contains(@class,'text-gray-900 text-size-15')])[2]"
-    );
+    this.getValueButton = page.locator('#buttoncheck');
   }
 
   async goto() {

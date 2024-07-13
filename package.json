@@ -4,7 +4,6 @@
   "description": "Playwright boilerplate with test examples.",
   "main": "index.js",
   "scripts": {
-    "chrome": "npx playwright test --project=chromium",
     "test": "npx playwright test"
   },
   "repository": {
@@ -19,6 +18,6 @@
   },
   "homepage": "https://github.com/irimiecernea/playwright-web-boilerplate#readme",
   "devDependencies": {
-    "@playwright/test": "^1.28.1"
+    "@playwright/test": "1.45.1"
   }
 }

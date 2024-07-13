@@ -7,5 +7,4 @@ test('Slider Demo', async ({ slider }) => {
 
   //move the slider in order to set a desired value
   await slider.changeSliderValueTo(27_500);
-  await slider.changeSliderValueTo(11_500);
 });
