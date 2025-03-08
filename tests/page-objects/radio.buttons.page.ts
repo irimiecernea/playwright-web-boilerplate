@@ -1,5 +1,5 @@
-import { Locator, Page } from '@playwright/test';
-type gender = 'Male' | 'Female';
+import { type Locator, type Page } from "playwright/test";
+type gender = "Male" | "Female";
 
 export class RadioButtons {
   readonly page: Page;
@@ -10,20 +10,20 @@ export class RadioButtons {
 
   constructor(page: Page) {
     this.page = page;
-    this.title = page.locator('div[class=container] h1');
-    this.maleRadioButton = page.locator('input[value=Male][name=optradio]');
-    this.femaleRadioButton = page.locator('input[value=Female][name=optradio]');
-    this.getValueButton = page.locator('#buttoncheck');
+    this.title = page.locator("div[class=container] h1");
+    this.maleRadioButton = page.locator("input[value=Male][name=optradio]");
+    this.femaleRadioButton = page.locator("input[value=Female][name=optradio]");
+    this.getValueButton = page.locator("#buttoncheck");
   }
 
   async goto() {
     await this.page.goto(
-      'https://www.lambdatest.com/selenium-playground/radiobutton-demo'
+      "https://www.lambdatest.com/selenium-playground/radiobutton-demo",
     );
   }
 
   async selectGenderType(gender: gender) {
-    if (gender === 'Male') {
+    if (gender === "Male") {
       await this.maleRadioButton.click();
     } else {
       await this.femaleRadioButton.click();
