@@ -17,7 +17,7 @@
     "url": "https://github.com/irimiecernea/playwright-web-boilerplate/issues"
   },
   "homepage": "https://github.com/irimiecernea/playwright-web-boilerplate#readme",
-  "devDependencies": {
-    "@playwright/test": "1.45.1"
+  "dependencies": {
+    "playwright": "1.51.0"
   }
 }

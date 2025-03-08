@@ -11,10 +11,10 @@ export class Slider {
   constructor(page: Page) {
     this.page = page;
     this.title = page.locator("'SIP Calculator'").nth(0);
-    this.sliderHandle = page.locator("//div[@role='slider']").first();
-    this.sliderValue = page.locator('#MONTHLY_INVESTMENT');
-    this.minSliderValue = 500;
-    this.maxSliderValue = 100_000;
+    this.sliderHandle = page.locator("//div[@role='slider']").nth(1);
+    this.sliderValue = page.locator('#RETURN_RATE');
+    this.minSliderValue = 1;
+    this.maxSliderValue = 30;
   }
 
   async goto() {
@@ -38,7 +38,7 @@ export class Slider {
           srcBound.y + srcBound.height / 2
         );
         await this.page.mouse.down();
-        if (amount > 25_000) {
+        if (amount > 12) {
           await this.page.mouse.move(
             srcBound.x + 15,
             srcBound.y + srcBound.height / 2
@@ -51,6 +51,7 @@ export class Slider {
         }
         await this.page.mouse.up();
         let text = await this.sliderValue.inputValue();
+        console.log(text)
         if (text == amount.toString()) {
           isCompleted = true;
         }

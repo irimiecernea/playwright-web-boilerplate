@@ -6,5 +6,5 @@ test('Slider Demo', async ({ slider }) => {
   expect(slider.title).toHaveText(/SIP Calculator/);
 
   //move the slider in order to set a desired value
-  await slider.changeSliderValueTo(27_500);
+  await slider.changeSliderValueTo(30);
 });
