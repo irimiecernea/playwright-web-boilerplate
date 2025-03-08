@@ -2,7 +2,7 @@
 
 Playwright boilerplate with test examples for several components.
 
-# Getting started macOS
+# Getting started
 
 ### 💼 Prerequisites
 
@@ -31,16 +31,14 @@ npm install
 ### Commands to run tests
 
 ```
-npx playwright test --project=foobar
+npx playwright test
 ```
 
 Summary of command line arguments:
 
-`yarn playwright test` -> the command used by Playwright to run all the tests from the `tests` folder. If you want to run a specific test and not the whole suite, please refer to [this](https://playwright.dev/docs/running-tests#command-line) documentation.
+`npx playwright test` -> the command used by Playwright to run all the tests from the `tests` folder. If you want to run a specific test and not the whole suite, please refer to [this](https://playwright.dev/docs/running-tests#command-line) documentation.
 
-`--project=foobar` -> where foobar is the browser on which you want to run your tests (e.g. `chromium`, `firefox`, etc.). Please refer to [this](https://playwright.dev/docs/browsers) documentation for more information.
-
-Please note that Playwright supports several flags when running tests, such as `--workers`, `--debug`, etc. Please check the official documentation if you want to customise your command further.
+Please note that Playwright supports several flags when running tests, such as `--workers`, `--debug`, `--project` etc. Please check the official documentation if you want to customise your command further.
 
 ### Playwright
 
