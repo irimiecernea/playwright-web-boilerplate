@@ -4,7 +4,8 @@
   "description": "Playwright boilerplate with test examples.",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,20 @@
   "homepage": "https://github.com/irimiecernea/playwright-web-boilerplate#readme",
   "dependencies": {
     "playwright": "1.51.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.22.0",
+    "eslint": "9.22.0",
+    "husky": "8.0.0",
+    "lint-staged": "15.4.3",
+    "prettier": "3.5.3",
+    "typescript": "5.8.2",
+    "typescript-eslint": "^8.26.0"
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier --write --ignore-unknown",
+      "eslint --quiet"
+    ]
   }
 }
