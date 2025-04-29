@@ -3,7 +3,7 @@ import { test, expect } from '../../fixtures/page-fixture';
 test('Slider Demo', async ({ slider }) => {
   //go to slider demo page
   await slider.goto();
-  expect(slider.title).toHaveText(/SIP Calculator/);
+  await expect(slider.title).toHaveText(/SIP Calculator/);
 
   //move the slider in order to set a desired value
   await slider.changeSliderValueTo(30);

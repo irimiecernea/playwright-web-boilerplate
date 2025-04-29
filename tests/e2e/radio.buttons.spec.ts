@@ -3,7 +3,7 @@ import { test, expect } from '../../fixtures/page-fixture';
 test('Radio Buttons Demo', async ({ radioButtons, page }) => {
   //go to radio buttons demo page
   await radioButtons.goto();
-  expect(radioButtons.title).toHaveText(/Radio button Demo/);
+  await expect(radioButtons.title).toHaveText(/Radio button Demo/);
 
   //select female gender
   await radioButtons.selectGenderType('Female');
