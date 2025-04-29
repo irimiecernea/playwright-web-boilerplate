@@ -1,6 +1,6 @@
-import { test, expect } from '../../fixtures/page-fixture';
+import { test, expect } from "../../fixtures/page-fixtures";
 
-test('Slider Demo', async ({ slider }) => {
+test("Slider Demo", async ({ slider }) => {
   //go to slider demo page
   await slider.goto();
   expect(slider.title).toHaveText(/SIP Calculator/);
