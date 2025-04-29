@@ -1,6 +1,6 @@
-import { test as base } from "playwright/test";
-import { RadioButtons } from "../tests/page-objects/radio.buttons.page";
-import { Slider } from "../tests/page-objects/slider.page";
+import { test as base } from 'playwright/test';
+import { RadioButtons } from '../tests/page-objects/radio.buttons.page';
+import { Slider } from '../tests/page-objects/slider.page';
 
 type pages = {
   slider: Slider;

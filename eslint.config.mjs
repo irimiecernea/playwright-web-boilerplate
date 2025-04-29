@@ -1,8 +1,8 @@
 // @ts-check
 
-import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import eslintConfigPrettier from 'eslint-config-prettier/flat';
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -10,18 +10,15 @@ export default tseslint.config(
   {
     languageOptions: {
       parserOptions: {
-        projectService: {
-          allowDefaultProject: ["*.ts"],
-        },
+        project: './tsconfig.json',
         tsconfigRootDir: import.meta.dirname,
-        ignoreFiles: ["eslint.config.mjs"],
       },
     },
   },
   eslintConfigPrettier,
   {
     rules: {
-      "@typescript-eslint/no-floating-promises": "error",
+      '@typescript-eslint/no-floating-promises': 'error',
     },
   },
 );
