@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/page-fixtures';
+import { test, expect } from '../../fixtures/page-fixture';
 
 test('Radio Buttons Demo', async ({ radioButtons, page }) => {
   //go to radio buttons demo page

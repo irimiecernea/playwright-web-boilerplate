@@ -1,4 +1,4 @@
-import { test, expect } from '../../fixtures/page-fixtures';
+import { test, expect } from '../../fixtures/page-fixture';
 
 test('Slider Demo', async ({ slider }) => {
   //go to slider demo page
