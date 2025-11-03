@@ -1,6 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
+  "extends": ["config:recommended"],
+  "minimumReleaseAge": "30 days",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": true
+    },
+    {
+      "matchUpdateTypes": ["patch", "digest", "pin", "lockFileMaintenance"],
+      "enabled": false
+    }
   ]
 }
